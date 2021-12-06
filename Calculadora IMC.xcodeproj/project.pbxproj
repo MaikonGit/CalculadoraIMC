@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84178AD9275D9D4D006C90A6 /* UIColor Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84178AD8275D9D4D006C90A6 /* UIColor Extensions.swift */; };
+		84869FD3275B1CA5006C5612 /* ViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84869FD2275B1CA5006C5612 /* ViewControler.swift */; };
+		84869FD5275BA661006C5612 /* ResultadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84869FD4275BA661006C5612 /* ResultadoViewController.swift */; };
 		84D37908275B0A2400614FBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D37907275B0A2400614FBC /* AppDelegate.swift */; };
 		84D3790A275B0A2400614FBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D37909275B0A2400614FBC /* SceneDelegate.swift */; };
-		84D3790C275B0A2400614FBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3790B275B0A2400614FBC /* ViewController.swift */; };
 		84D3790F275B0A2400614FBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D3790D275B0A2400614FBC /* Main.storyboard */; };
 		84D37911275B0A2600614FBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D37910275B0A2600614FBC /* Assets.xcassets */; };
 		84D37914275B0A2600614FBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D37912275B0A2600614FBC /* LaunchScreen.storyboard */; };
+		84D3791F275B188800614FBC /* CalculadoraBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3791E275B188800614FBC /* CalculadoraBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84178AD8275D9D4D006C90A6 /* UIColor Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor Extensions.swift"; sourceTree = "<group>"; };
+		84869FD2275B1CA5006C5612 /* ViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControler.swift; sourceTree = "<group>"; };
+		84869FD4275BA661006C5612 /* ResultadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadoViewController.swift; sourceTree = "<group>"; };
 		84D37904275B0A2400614FBC /* Calculadora IMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calculadora IMC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D37907275B0A2400614FBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84D37909275B0A2400614FBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84D3790B275B0A2400614FBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84D3790E275B0A2400614FBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84D37910275B0A2600614FBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84D37913275B0A2600614FBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84D37915275B0A2600614FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D3791E275B188800614FBC /* CalculadoraBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84178AD7275D9D28006C90A6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84178AD8275D9D4D006C90A6 /* UIColor Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		84D378FB275B0A2400614FBC = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +72,40 @@
 			children = (
 				84D37907275B0A2400614FBC /* AppDelegate.swift */,
 				84D37909275B0A2400614FBC /* SceneDelegate.swift */,
-				84D3790B275B0A2400614FBC /* ViewController.swift */,
-				84D3790D275B0A2400614FBC /* Main.storyboard */,
+				84178AD7275D9D28006C90A6 /* Extensions */,
+				84D3791C275B180000614FBC /* MODEL */,
+				84D3791B275B17EB00614FBC /* VIEW */,
+				84D3791D275B180C00614FBC /* CONTROLER */,
 				84D37910275B0A2600614FBC /* Assets.xcassets */,
 				84D37912275B0A2600614FBC /* LaunchScreen.storyboard */,
 				84D37915275B0A2600614FBC /* Info.plist */,
 			);
 			path = "Calculadora IMC";
+			sourceTree = "<group>";
+		};
+		84D3791B275B17EB00614FBC /* VIEW */ = {
+			isa = PBXGroup;
+			children = (
+				84D3790D275B0A2400614FBC /* Main.storyboard */,
+			);
+			path = VIEW;
+			sourceTree = "<group>";
+		};
+		84D3791C275B180000614FBC /* MODEL */ = {
+			isa = PBXGroup;
+			children = (
+				84D3791E275B188800614FBC /* CalculadoraBrain.swift */,
+			);
+			path = MODEL;
+			sourceTree = "<group>";
+		};
+		84D3791D275B180C00614FBC /* CONTROLER */ = {
+			isa = PBXGroup;
+			children = (
+				84869FD2275B1CA5006C5612 /* ViewControler.swift */,
+				84869FD4275BA661006C5612 /* ResultadoViewController.swift */,
+			);
+			name = CONTROLER;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D3790C275B0A2400614FBC /* ViewController.swift in Sources */,
+				84D3791F275B188800614FBC /* CalculadoraBrain.swift in Sources */,
+				84869FD3275B1CA5006C5612 /* ViewControler.swift in Sources */,
+				84178AD9275D9D4D006C90A6 /* UIColor Extensions.swift in Sources */,
+				84869FD5275BA661006C5612 /* ResultadoViewController.swift in Sources */,
 				84D37908275B0A2400614FBC /* AppDelegate.swift in Sources */,
 				84D3790A275B0A2400614FBC /* SceneDelegate.swift in Sources */,
 			);
@@ -295,6 +339,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,6 +368,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
