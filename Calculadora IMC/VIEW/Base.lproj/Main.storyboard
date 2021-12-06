@@ -28,7 +28,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wg7-4f-h2X">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="80"/>
                                         <subviews>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="Cox-bJ-2k6">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="1" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="Cox-bJ-2k6">
                                                 <rect key="frame" x="23" y="50" width="348" height="31"/>
                                                 <color key="minimumTrackTintColor" red="0.74514228110000003" green="0.26968005299999998" blue="0.33724105360000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="maximumTrackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -66,7 +66,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hf7-u6-rOc">
                                         <rect key="frame" x="0.0" y="88" width="394" height="80"/>
                                         <subviews>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="ogO-sw-GuR">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="110" minValue="20" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="ogO-sw-GuR">
                                                 <rect key="frame" x="23" y="50" width="348" height="31"/>
                                                 <color key="minimumTrackTintColor" red="0.74514228110000003" green="0.26968005299999998" blue="0.33724105360000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="maximumTrackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -107,6 +107,7 @@
                                 <rect key="frame" x="30" y="792" width="354" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="qnZ-Ce-o9C"/>
+                                    <constraint firstAttribute="width" secondItem="bGn-w8-PTI" secondAttribute="height" multiplier="177:25" id="w9K-Xn-Sn0"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="CALCULAR IMC" cornerStyle="capsule">
@@ -121,10 +122,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bGn-w8-PTI" secondAttribute="trailing" constant="30" id="2Sd-Ys-TiB"/>
                             <constraint firstItem="bGn-w8-PTI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ox-3N-GfJ"/>
                             <constraint firstItem="bGn-w8-PTI" firstAttribute="top" secondItem="Pts-0P-bfI" secondAttribute="bottom" constant="15" id="7Cx-qq-gVP"/>
-                            <constraint firstItem="bGn-w8-PTI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="J7Z-iC-SNS"/>
                             <constraint firstItem="Pts-0P-bfI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="cXB-8l-w5H"/>
                             <constraint firstItem="Ze0-tI-m0R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="n7d-4D-Bzz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bGn-w8-PTI" secondAttribute="bottom" constant="20" id="oko-gC-NeI"/>
